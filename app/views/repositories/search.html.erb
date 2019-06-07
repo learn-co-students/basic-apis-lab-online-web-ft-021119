@@ -5,3 +5,12 @@
   <%= submit_tag "Search Github!" %>
 <% end %>
 
+<div>
+<%= @resp %>
+  <% if @error %>
+    <p><%= @error %></p>
+  <% elsif @repo %>
+  
+    <p><%= Name: @resp.body[:name] %><p>
+  <% end %> %>
+</div>
