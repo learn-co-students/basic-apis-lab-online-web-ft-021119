@@ -12,7 +12,7 @@ class RepositoriesController < ApplicationController
           req.params['client_secret'] = '2843a743ad0fff43d96d1028fd6922d270d4b982'
           req.params['q'] = 'tetris'
       end
-      binding.pry
+      # binding.pry
       body = JSON.parse(@resp.body)
         if @resp.success?
           @repo = body["items"][0]
